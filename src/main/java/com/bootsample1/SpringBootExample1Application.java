@@ -21,5 +21,9 @@ public class SpringBootExample1Application {
  
 		Student two=new Student("Jane","history");
 		hmStudent.put(new Long(two.getId()),two);
+		
+		Student three=new Student("Pradipta","physics");
+		hmStudent.put(new Long(three.getId()),three);
+		
 	}
 }
