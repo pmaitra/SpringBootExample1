@@ -1,5 +1,9 @@
 pipeline{
   agent any
+  tools {
+        maven 'Maven 3.6.3'
+        jdk 'jdk8'
+  }
   stages{
     stage('SCM Checkout'){
       steps{
@@ -9,7 +13,8 @@ pipeline{
     stage('Compile Package'){
       steps{
         //def mavenhome = tool name: 'Maven', type: 'maven'
-        sh "${mavenhome}/bin/mvn clean package"
+        //sh "${mavenhome}/bin/mvn clean package"
+        sh 'mvn clean package'
         }
     }
     stage('Email Notification'){
