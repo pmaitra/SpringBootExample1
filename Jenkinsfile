@@ -14,7 +14,7 @@ pipeline{
       steps{
         //def mavenhome = tool name: 'Maven', type: 'maven'
         //sh "${mavenhome}/bin/mvn clean package"
-        sh 'mvn clean package'
+        sh 'mvn clean package1'
         }
     }
     stage('Email Notification'){
