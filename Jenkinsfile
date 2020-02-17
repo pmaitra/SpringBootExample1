@@ -19,7 +19,7 @@ pipeline{
     }
     stage('Email Notification'){
       steps{
-        mail bcc:'', body:'Email from Jenkins pipeline build and deploy', subject:'Jenkins Job', to: 'pradipta.maitra@gmail.com'
+        mail bcc:'', body:'Email from Jenkins Pipeline build and deploy', subject:'Jenkins Job', to: 'pradipta.maitra@gmail.com'
       }
      }
   }
