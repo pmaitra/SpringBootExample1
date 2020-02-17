@@ -2,7 +2,7 @@ pipeline{
   agent any
   stages{
     stage('SCM Checkout'){
-      step{
+      steps{
         git 'https://github.com/pmaitra/SpringBootExample1.git'
       }
     }
