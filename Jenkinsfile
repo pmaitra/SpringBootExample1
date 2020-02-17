@@ -8,8 +8,9 @@ pipeline{
     }
     stage('Compile Package'){
       steps{
-        def mavenhome = tool name: 'Maven', type: 'maven'
-        sh "${mavenhome}/bin/mvn clean package"
+        //def mavenhome = tool name: 'Maven', type: 'maven'
+        //sh "${mavenhome}/bin/mvn clean package"
+        sh 'mvn clean package'
       }
     }
     stage('Email Notification'){
